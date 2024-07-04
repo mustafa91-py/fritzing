@@ -16,14 +16,12 @@ void setup() {
   pinMode(echo_pin,INPUT);
   pinMode(buzzer_pin,OUTPUT);
   pinMode(led_pin,OUTPUT);
-  //Serial.begin(9600);
 }
 
 
 void loop() {
   // put your main code here, to run repeatedly:
   int olcum = mesafe(maximum_range,minimum_range);
-//  Serial.println(olcum);
   melodi(olcum*10);
 
 
